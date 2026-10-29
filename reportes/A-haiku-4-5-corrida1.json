@@ -1,0 +1,638 @@
+{
+ "experimento": "A-haiku-4-5-corrida1",
+ "modelo": "anthropic:claude-haiku-4-5",
+ "fecha": "2026-10-29 09:57",
+ "resumen": {
+  "uso_herramientas": 1.0,
+  "respuesta_correcta": 0.917,
+  "cita_fuente": 0.944,
+  "abstencion": 0.972,
+  "casos": 36,
+  "costo_total_usd": 0.3564,
+  "costo_por_pregunta_usd": 0.0099,
+  "tokens_promedio": 8762,
+  "latencia_promedio_s": 5.38,
+  "abstencion_en_casos_no_lo_se": 0.833
+ },
+ "casos": [
+  {
+   "id": "T01",
+   "tipo": "rag",
+   "pregunta": "¿Qué índice de liquidez exige el pliego del proceso FLO-INFRA-SA-MC-007-2025?",
+   "respuesta": "El pliego del proceso FLO-INFRA-SA-MC-007-2025 exige un **índice de liquidez mayor o igual a 1.8**.\n\nFuentes: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, sección «5. Capacidad financiera y organizacional (según RUP)»",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7637,
+   "tokens_salida": 195,
+   "costo_usd": 0.008612,
+   "latencia_s": 5.14,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T02",
+   "tipo": "rag",
+   "pregunta": "¿Qué experiencia exige el pliego de la licitación de INVIAS de la Dirección Territorial Cauca?",
+   "respuesta": "El pliego de la licitación **LP-DT-CAU-003-2019** de INVIAS - Dirección Territorial Cauca exige la siguiente experiencia:\n\n**Máximo 3 contratos inscritos en el RUP**, clasificados en **al menos uno de los códigos UNSPSC 72141000** (servicios de mantenimiento de vías), cuya suma sea igual o superior al **100 % del presupuesto oficial expresado en SMMLV**. Adicionalmente, **al menos uno de los contratos deberá tener un valor igual o superior al 50 % del presupuesto oficial**.\n\nFuentes: 13_LP_DT_CAU_003_2019.pdf, p. 2, sección «7. Experiencia del proponente».",
+   "herramientas": [
+    "listar_documentos",
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 13644,
+   "tokens_salida": 428,
+   "costo_usd": 0.015784,
+   "latencia_s": 5.25,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T03",
+   "tipo": "rag",
+   "pregunta": "¿Qué garantía de seriedad de la oferta exige la Alcaldía de Floridablanca en su pliego?",
+   "respuesta": "La Alcaldía de Floridablanca exige una **garantía de seriedad de la oferta del 10 % del presupuesto oficial**, con vigencia de tres (3) meses desde el cierre del proceso.\n\nFuentes: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, sección «8. Garantías»",
+   "herramientas": [
+    "listar_documentos",
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 13323,
+   "tokens_salida": 292,
+   "costo_usd": 0.014783,
+   "latencia_s": 3.96,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T04",
+   "tipo": "rag",
+   "pregunta": "¿Qué formación y experiencia se exigen al nutricionista que contrata la Gobernación del Chocó?",
+   "respuesta": "De acuerdo con el documento del proceso **CD-PS-GDCH-186SS-2024** de la Gobernación del Chocó, se exigen los siguientes requisitos para el nutricionista:\n\n**Formación:**\n- Profesional en nutrición y dietética con tarjeta profesional vigente\n\n**Experiencia:**\n- Mínimo 12 meses de experiencia en programas de seguridad alimentaria y nutricional\n\nFuentes: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, sección «4. Perfil e idoneidad requeridos»",
+   "herramientas": [
+    "listar_documentos",
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 13469,
+   "tokens_salida": 421,
+   "costo_usd": 0.015574,
+   "latencia_s": 5.12,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T05",
+   "tipo": "rag",
+   "pregunta": "¿Cuál es el criterio de selección en la compra de electrobombas del Colegio Gabriel Betancourt Mejía?",
+   "respuesta": "En el proceso **RE-CGBM-049-2024** del Colegio Gabriel Betancourt Mejía, el criterio de selección es:\n\n**Menor precio** que cumpla todos los requisitos habilitantes y las especificaciones técnicas. En caso de empate, se preferirá la oferta presentada primero en el tiempo.\n\nSe requieren 2 electrobombas de superficie centrífuga modelo Pearl C2P 55H36S, con potencia de 5,5 HP, 220/440V trifásicas.\n\nFuentes: \n- Criterio de selección: 03_RE_CGBM_049_2024.pdf, p. 2, sección «6. Criterio de selección»\n- Especificaciones técnicas: 03_RE_CGBM_049_2024.pdf, p. 1, sección «3. Bienes o servicios requeridos»",
+   "herramientas": [
+    "buscar_procesos",
+    "listar_documentos",
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 13729,
+   "tokens_salida": 449,
+   "costo_usd": 0.015974,
+   "latencia_s": 5.35,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T06",
+   "tipo": "rag",
+   "pregunta": "¿Qué índice de endeudamiento máximo exige el pliego FDLS-LP-098-2019?",
+   "respuesta": "El pliego FDLS-LP-098-2019 exige un **índice de endeudamiento menor o igual al 70 %**.\n\nFuentes: 11_FDLS_LP_098_2019.pdf, p. 2, sección «5. Capacidad financiera y organizacional (según RUP)»",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7613,
+   "tokens_salida": 205,
+   "costo_usd": 0.008638,
+   "latencia_s": 2.85,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T07",
+   "tipo": "rag",
+   "pregunta": "¿Qué perfil profesional pide INVIAS en el proceso CD-CPS-0720-2026?",
+   "respuesta": "INVIAS solicita en el proceso **CD-CPS-0720-2026** el siguiente perfil:\n\n**Formación:**\n- Contador público con tarjeta profesional vigente\n\n**Experiencia:**\n- Mínimo 36 meses de experiencia profesional, de los cuales 12 meses deben ser en gestión financiera de contratos o convenios públicos\n\nEl contrato es para prestar servicios profesionales en acompañamiento de la gestión contable y financiera de los programas del INVIAS en la Subdirección de Vías Regionales.\n\nFuentes: 04_CD_CPS_0720_2026.pdf, p. 1, sección «4. Perfil e idoneidad requeridos»",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7393,
+   "tokens_salida": 299,
+   "costo_usd": 0.008888,
+   "latencia_s": 3.56,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T08",
+   "tipo": "rag",
+   "pregunta": "¿Qué dice el documento de Agrosavia sobre su presupuesto?",
+   "respuesta": "El documento de Agrosavia (proceso 135116) establece que **el presupuesto oficial registrado para este proceso es de $0 COP**. Según el documento, los oferentes deben cotizar precios unitarios y la entidad adjudicará hasta su disponibilidad presupuestal, sin un presupuesto base definido de antemano.\n\nFuentes: 07_135116.pdf, p. 2, sección «8. Nota sobre el presupuesto»",
+   "herramientas": [
+    "listar_documentos",
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 13605,
+   "tokens_salida": 316,
+   "costo_usd": 0.015185,
+   "latencia_s": 4.72,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T09",
+   "tipo": "rag",
+   "pregunta": "¿Cuántos puntos otorga el factor económico en el pliego FLO-INFRA-SA-MC-007-2025?",
+   "respuesta": "El factor económico en el pliego FLO-INFRA-SA-MC-007-2025 otorga **50 puntos** de los 100 totales en la evaluación.\n\nFuentes: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, sección «7. Criterios de evaluación»",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7708,
+   "tokens_salida": 207,
+   "costo_usd": 0.008743,
+   "latencia_s": 2.81,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T10",
+   "tipo": "combinada",
+   "pregunta": "¿Cumplimos el índice de liquidez que exige el proceso FLO-INFRA-SA-MC-007-2025?",
+   "respuesta": "**No cumplimos** el índice de liquidez que exige el proceso FLO-INFRA-SA-MC-007-2025.\n\n- **Exigido**: Índice de liquidez mayor o igual a **1.8** (Pliego de condiciones, sección 5).\n- **Nuestro índice**: **1.7**.\n\nLa diferencia es pequeña (0.1 puntos), pero nuestra empresa queda por debajo del requisito mínimo establecido.\n\nFuentes: Pliego de condiciones del proceso FLO-INFRA-SA-MC-007-2025 (p. 2, sección «5. Capacidad financiera y organizacional»); Cálculo con los estados financieros de la empresa (corte 2025-12-31).",
+   "herramientas": [
+    "buscar_en_pliegos",
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 7845,
+   "tokens_salida": 345,
+   "costo_usd": 0.00957,
+   "latencia_s": 4.45,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 0,
+   "abstencion": 1
+  },
+  {
+   "id": "T11",
+   "tipo": "combinada",
+   "pregunta": "¿Cumplimos la razón de cobertura de intereses que exige el pliego LP-DT-CAU-003-2019?",
+   "respuesta": "No, nuestra empresa **no cumple** el requisito de cobertura de intereses del pliego LP-DT-CAU-003-2019.\n\n**Comparación:**\n- **Exigido:** mayor o igual a 2.8 (o indeterminado)\n- **Nuestra empresa:** 2.5\n- **Resultado:** Faltamos 0.3 puntos\n\nNuestra razón de cobertura de intereses está por debajo del mínimo exigido.\n\n**Fuentes:** Pliego LP-DT-CAU-003-2019 (13_LP_DT_CAU_003_2019.pdf, p. 2, sección «6. Capacidad financiera y organizacional»); Cálculo con los estados financieros de la empresa (corte 2025-12-31).",
+   "herramientas": [
+    "buscar_en_pliegos",
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 7891,
+   "tokens_salida": 361,
+   "costo_usd": 0.009696,
+   "latencia_s": 4.38,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 0,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T12",
+   "tipo": "combinada",
+   "pregunta": "¿Nuestra experiencia cumple el requisito de experiencia del pliego FDLS-LP-098-2019?",
+   "respuesta": "Perfecto. Ahora puedo hacer la evaluación. El presupuesto oficial es **$600.000.000**.\n\nSegún el pliego, nuestra empresa debe acreditar:\n- **Máximo 2 contratos** clasificados en el código UNSPSC **81101500**\n- Sumatoria de valores ≥ **150% del presupuesto oficial** (es decir, ≥ $900.000.000)\n- **Al menos un contrato** con valor ≥ **50% del presupuesto oficial** (es decir, ≥ $300.000.000)\n\n**Análisis de nuestra experiencia:**\n\nTenemos **3 contratos** con el código UNSPSC 81101500:\n\n1. **EXP-1** (Gobernación Valle del Cauca, 2022): $520.000.000 ✓\n2. **EXP-2** (Municipio de Jamundí, 2023): $430.000.000 ✓\n3. **EXP-3** NO tiene el código 81101500 (solo 72101500, 72152700)\n\n**Conclusión: NO cumple.**\n\nCon solo 2 contratos válidos (EXP-1 y EXP-2) sumamos $950.000.000, que **sí alcanza el 150%** ($900.000.000). Sin embargo, el pliego exige \"máximo 2 contratos\", y nosotros tenemos 3 en nuestro RUP. Si presentamos solo los 2 que cumplen el código, alcanzamos los requisitos. Pero **si la evaluación es estricta sobre todos los contratos inscritos en el RUP en la categoría**, el exceso de contratos podría descalificarnos.\n\nLo recomendable es **verificar con el RUP vigente cuáles contratos están realmente inscritos en 81101500** antes de presentar oferta.\n\nFuentes: Pliego de condiciones (11_FDLS_LP_098_2019.pdf, p. 2, sección 6); Perfil de la empresa (empresa.json); SECOP II, datos abiertos (referencia FDLS-LP-098-2019).",
+   "herramientas": [
+    "buscar_en_pliegos",
+    "consultar_empresa",
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 13976,
+   "tokens_salida": 792,
+   "costo_usd": 0.017936,
+   "latencia_s": 9.66,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 0,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T13",
+   "tipo": "no_lo_se",
+   "pregunta": "¿Qué garantía de seriedad de la oferta exige el estudio previo del DANE EDP-545-2022?",
+   "respuesta": "No lo sé: el documento no exige garantía de seriedad de la oferta. Solo exige **garantía de cumplimiento** por el 10 % del valor del contrato, con vigencia igual al plazo más cuatro (4) meses adicionales.\n\nFuentes: 01_EDP_545_2022.pdf, p. 2, sección «7. Garantías»",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7405,
+   "tokens_salida": 214,
+   "costo_usd": 0.008475,
+   "latencia_s": 2.9,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T14",
+   "tipo": "no_lo_se",
+   "pregunta": "¿Qué índice de liquidez exige el proceso EDP-545-2022?",
+   "respuesta": "No lo sé: el proceso EDP-545-2022 no exige un índice de liquidez específico. El documento indexado establece requisitos de perfil e idoneidad (formación en economía, estadística o matemáticas con posgrado; mínimo 24 meses de experiencia en procesamiento de encuestas de hogares), garantía de cumplimiento del 10 % del valor del contrato, y forma de pago en 4 cuotas mensuales; pero no menciona ningún indicador de liquidez requerido.\n\nFuentes: 01_EDP_545_2022.pdf (páginas 1–2, secciones «1. Información general del proceso», «4. Perfil e idoneidad requeridos», «6. Valor y forma de pago» y «7. Garantías»).",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7541,
+   "tokens_salida": 295,
+   "costo_usd": 0.009016,
+   "latencia_s": 3.92,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 0,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T15",
+   "tipo": "no_lo_se",
+   "pregunta": "¿Qué requisitos habilitantes exige el proceso XYZ-999-2030?",
+   "respuesta": "No lo sé: no hay ningún documento con la referencia XYZ-999-2030 entre los procesos disponibles. \n\nPuedo ayudarle a identificar la referencia correcta. ¿Podría indicarme el nombre de la entidad o el proceso que está buscando? Alternativamente, puedo mostrarle los documentos indexados con sus referencias.\n\nFuentes: búsqueda en los documentos del curso (sin resultados).",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 6513,
+   "tokens_salida": 229,
+   "costo_usd": 0.007658,
+   "latencia_s": 3.01,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T16",
+   "tipo": "no_lo_se",
+   "pregunta": "¿Cuál es el porcentaje de anticipo del proceso FLO-INFRA-SA-MC-007-2025?",
+   "respuesta": "El documento no especifica un porcentaje de anticipo para este proceso. En la sección «9. Forma de pago» del pliego solo se menciona que habrá «pagos mensuales según actas de avance», se retendrá el 5 % de cada pago, y se establece que «previa amortización del anticipo cuando lo haya» —es decir, el anticipo es opcional.\n\n**Fuentes:** 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, sección «9. Forma de pago»",
+   "herramientas": [
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 7663,
+   "tokens_salida": 275,
+   "costo_usd": 0.009038,
+   "latencia_s": 3.46,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 0,
+   "abstencion": 0
+  },
+  {
+   "id": "T17",
+   "tipo": "no_lo_se",
+   "pregunta": "¿Quién será el interventor del contrato de la licitación de Sumapaz?",
+   "respuesta": "No lo sé: el documento no menciona específicamente quién será el interventor del contrato FDLS-LP-098-2019. El pliego de condiciones solo hace referencia a que habrá «interventoría o supervisión» que aprobará las actas de avance para el pago, pero no identifica la persona o entidad que ejercerá esa función. Esa información generalmente se define después de la adjudicación del contrato.\n\nFuentes: búsqueda en el pliego de condiciones del proceso FDLS-LP-098-2019 (11_FDLS_LP_098_2019.pdf).",
+   "herramientas": [
+    "buscar_procesos",
+    "buscar_en_pliegos"
+   ],
+   "tokens_entrada": 12046,
+   "tokens_salida": 418,
+   "costo_usd": 0.014136,
+   "latencia_s": 5.29,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "T18",
+   "tipo": "no_lo_se",
+   "pregunta": "¿Quién ganó el mundial de fútbol de 2022?",
+   "respuesta": "No lo sé: esa pregunta es ajena a la contratación pública colombiana y a los procesos del SECOP II. Soy un analista especializado en asesorar a nuestra empresa sobre oportunidades de contratación pública.\n\n¿Hay algún proceso de contratación o requisito sobre el que pueda ayudarle?",
+   "herramientas": [],
+   "tokens_entrada": 3161,
+   "tokens_salida": 88,
+   "costo_usd": 0.003601,
+   "latencia_s": 1.53,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R01",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es el índice de liquidez de nuestra empresa?",
+   "respuesta": "El índice de liquidez de nuestra empresa es **1,7** (corte 2025-12-31). Este índice indica que la empresa cuenta con $1,70 en activos corrientes por cada $1,00 de pasivos corrientes, lo que refleja una posición de liquidez sana.\n\nFuentes: Cálculo con los estados financieros de la empresa (corte 2025-12-31).",
+   "herramientas": [
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 6489,
+   "tokens_salida": 160,
+   "costo_usd": 0.007289,
+   "latencia_s": 2.38,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R02",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es nuestro nivel de endeudamiento?",
+   "respuesta": "El nivel de endeudamiento de nuestra empresa es del **62%** (al corte de 31 de diciembre de 2025).\n\nEsto significa que el 62 % de los activos de la empresa está financiado con deuda, mientras que el 38 % está financiado con patrimonio. Es un nivel de endeudamiento moderado y manejable, típico de empresas con capacidad de operación sostenible.\n\nFuentes: Cálculo con los estados financieros de la empresa (corte 2025-12-31)",
+   "herramientas": [
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 6470,
+   "tokens_salida": 174,
+   "costo_usd": 0.00734,
+   "latencia_s": 2.57,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R03",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es nuestra razón de cobertura de intereses?",
+   "respuesta": "Nuestra empresa tiene una razón de cobertura de intereses de **2,5**. Esto significa que el EBITDA de la empresa cubre 2,5 veces el pago anual de intereses de la deuda, lo que indica una capacidad moderada para atender sus obligaciones financieras.\n\nFuentes: Cálculo con los estados financieros de la empresa (corte 2025-12-31).",
+   "herramientas": [
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 6474,
+   "tokens_salida": 145,
+   "costo_usd": 0.007199,
+   "latencia_s": 2.24,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R04",
+   "tipo": "taller1",
+   "pregunta": "¿Cuánto capital de trabajo tenemos?",
+   "respuesta": "Nuestra empresa tiene un capital de trabajo de **$182 millones** al corte del 31 de diciembre de 2025.\n\nFuentes: Cálculo con los estados financieros de la empresa (corte 2025-12-31).",
+   "herramientas": [
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 6462,
+   "tokens_salida": 103,
+   "costo_usd": 0.006977,
+   "latencia_s": 1.8,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R05",
+   "tipo": "taller1",
+   "pregunta": "¿Qué códigos UNSPSC tenemos registrados en el RUP?",
+   "respuesta": "Nuestra empresa tiene registrados en el RUP cinco códigos UNSPSC:\n\n1. **72141000** – Obra civil (actividades de construcción)\n2. **81101500** – Mantenimiento de carreteras y estructuras viales\n3. **72101500** – Construcción de edificios e instalaciones\n4. **72152700** – Adecuación y remodelación de edificios\n5. **72102900** – Construcción de estructuras de ingeniería civil\n\nEl RUP está vigente hasta el **15 de marzo de 2026**.\n\nFuentes: Perfil de la empresa (empresa.json)",
+   "herramientas": [
+    "consultar_empresa"
+   ],
+   "tokens_entrada": 7034,
+   "tokens_salida": 198,
+   "costo_usd": 0.008024,
+   "latencia_s": 3.23,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R06",
+   "tipo": "taller1",
+   "pregunta": "¿Cuánto suma nuestra experiencia en contratos clasificados con el código UNSPSC 81101500?",
+   "respuesta": "Nuestra empresa tiene experiencia en contratos clasificados con el código UNSPSC 81101500 en dos proyectos:\n\n1. **EXP-1** (Gobernación del Valle del Cauca, 2022): $520.000.000\n2. **EXP-2** (Municipio de Jamundí, 2023): $430.000.000\n\n**Total: $950.000.000**\n\nFuentes: Perfil de la empresa (empresa.json)",
+   "herramientas": [
+    "consultar_empresa"
+   ],
+   "tokens_entrada": 7083,
+   "tokens_salida": 195,
+   "costo_usd": 0.008058,
+   "latencia_s": 60.23,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R07",
+   "tipo": "taller1",
+   "pregunta": "¿Cuántos procesos de contratación directa hay en la muestra?",
+   "respuesta": "En la muestra hay **9 procesos de contratación directa**, con un presupuesto total de $3.579.841.463 y un promedio de $397.760.163 por proceso.\n\nFuentes: SECOP II, datos abiertos (búsqueda por modalidad «directa»).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 10277,
+   "tokens_salida": 154,
+   "costo_usd": 0.011047,
+   "latencia_s": 2.59,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R08",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es el proceso con mayor presupuesto oficial y cuánto es?",
+   "respuesta": "El proceso con mayor presupuesto oficial es **LP-DT-CAU-003-2019** del Instituto Nacional de Vías (INVIAS), con un presupuesto base de **$53.520.784.298** (aproximadamente 53,5 mil millones de pesos).\n\nSe trata de un contrato de obra pública para mantenimiento rutinario de vías a cargo de la Dirección Territorial Cauca, publicado el 30 de septiembre de 2019. Aunque fue adjudicado a la Cooperativa de Trabajo Asociado Siglo XXI por un valor de $1.217.527.123, el presupuesto oficial (precio base) es significativamente mayor.\n\n**Fuentes:** SECOP II, datos abiertos (referencia LP-DT-CAU-003-2019).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 14929,
+   "tokens_salida": 260,
+   "costo_usd": 0.016229,
+   "latencia_s": 3.76,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R09",
+   "tipo": "taller1",
+   "pregunta": "¿Qué procesos de licitación pública hay?",
+   "respuesta": "En la muestra de procesos disponibles hay **2 procesos de licitación pública**:\n\n1. **FDLS-LP-098-2019** (Alcaldía Local de Sumapaz)\n   - Objeto: Conservación de puentes sobre corrientes de agua en la localidad de Sumapaz\n   - Presupuesto: $600.000.000\n   - Tipo de contrato: Obra\n   - Estado: Evaluación (no adjudicado)\n   - Recepción de ofertas: 31 de mayo de 2019\n\n2. **LP-DT-CAU-003-2019** (INVIAS)\n   - Objeto: Mantenimiento rutinario de vías a cargo del Instituto Nacional de Vías, Dirección Territorial Cauca\n   - Presupuesto: $53.520.784.298\n   - Tipo de contrato: Obra\n   - Estado: Adjudicado a \"Cooperativa de Trabajo Asociado Siglo XXI\" por $1.217.527.123\n   - Ofertas recibidas: 51\n   - Recepción de ofertas: 11 de octubre de 2019\n\n**Presupuesto total**: $54.120.784.298 | **Promedio**: $27.060.392.149\n\nFuentes: SECOP II, datos abiertos (modalidad: licitación pública).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 7370,
+   "tokens_salida": 448,
+   "costo_usd": 0.00961,
+   "latencia_s": 4.8,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R10",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es el presupuesto promedio de los procesos de entidades de Antioquia?",
+   "respuesta": "El presupuesto promedio de los procesos de entidades de Antioquia es de **$120.120.571** (COP).\n\nEn los datos se encontraron 3 procesos de entidades antioqueñas con un presupuesto total de $360.361.713, sin procesos con presupuesto de $0. Los procesos son:\n\n1. **OC10-2494-2025** (Bellosalud): $4.260.200\n2. **SA-004-2023** (INDER Medellín): $270.101.513\n3. **5308/SASP01/2023** (Alcaldía de Girardota): $86.000.000\n\nFuentes: SECOP II, datos abiertos (búsqueda por departamento Antioquia).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 7722,
+   "tokens_salida": 278,
+   "costo_usd": 0.009112,
+   "latencia_s": 3.72,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R11",
+   "tipo": "taller1",
+   "pregunta": "¿Cuántos procesos hay de entidades de Santander y cuál es el más reciente?",
+   "respuesta": "Hay **2 procesos** de entidades de Santander en la base de datos.\n\nEl **más reciente** es **FLO-INFRA-SA-MC-007-2025** de la Alcaldía de Floridablanca, publicado el 30 de diciembre de 2025. Se trata de una obra por $305.813.941 en modalidad de Selección Abreviada de Menor Cuantía para adecuación y mantenimiento de instalaciones del Palacio Municipal. Este proceso ya está adjudicado a Construobras Isaval S.A.S por $305.644.297.\n\nEl otro proceso es SINF-CPS-050-23 del Municipio de Piedecuesta, de febrero de 2023, para prestación de servicios de ingeniería civil.\n\nFuentes: SECOP II, datos abiertos (Santander).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 7390,
+   "tokens_salida": 296,
+   "costo_usd": 0.00887,
+   "latencia_s": 3.73,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R12",
+   "tipo": "taller1",
+   "pregunta": "¿Qué proceso de INVIAS corresponde a la Dirección Territorial Cauca?",
+   "respuesta": "Hay un proceso de INVIAS correspondiente a la Dirección Territorial Cauca:\n\n**LP-DT-CAU-003-2019**: «Mantenimiento rutinario de vías a cargo del Instituto Nacional de Vías, Dirección Territorial Cauca (producto: vía primaria mantenida)». Es una licitación pública de obra pública con presupuesto base de $53.520.784.298, duración de 33 meses. Se publicó el 30 de septiembre de 2019, está adjudicado a Cooperativa de Trabajo Asociado Siglo XXI por un valor de $1.217.527.123. Recibió 51 ofertas.\n\nFuentes: SECOP II, datos abiertos (referencia LP-DT-CAU-003-2019).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 6930,
+   "tokens_salida": 282,
+   "costo_usd": 0.00834,
+   "latencia_s": 3.45,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R13",
+   "tipo": "taller1",
+   "pregunta": "¿Cuántas ofertas recibió el proceso LP-DT-CAU-003-2019 y quién lo ganó?",
+   "respuesta": "El proceso **LP-DT-CAU-003-2019** (INVIAS, Dirección Territorial Cauca) recibió **51 ofertas** y fue adjudicado a **COOPERATIVA DE TRABAJO ASOCIADO SIGLO XXI** por un valor de $1.217.527.123.\n\nFuentes: SECOP II, datos abiertos (referencia LP-DT-CAU-003-2019).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 6957,
+   "tokens_salida": 193,
+   "costo_usd": 0.007922,
+   "latencia_s": 2.71,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R14",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es el plazo de ejecución del proceso SA-004-2023?",
+   "respuesta": "El plazo de ejecución del proceso **SA-004-2023** es **0 días**, según los datos abiertos del SECOP II. Este dato parece inconsistente, ya que un plazo de cero días no es operativamente realista para un suministro de equipos y herramientas. Le recomiendo revisar directamente el documento del pliego de condiciones del proceso para confirmar el plazo real.\n\nFuentes: SECOP II, datos abiertos (referencia SA-004-2023).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 6928,
+   "tokens_salida": 204,
+   "costo_usd": 0.007948,
+   "latencia_s": 2.79,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R15",
+   "tipo": "taller1",
+   "pregunta": "¿Cuál es el presupuesto del proceso de Agrosavia?",
+   "respuesta": "El proceso de Agrosavia registrado en los datos abiertos del SECOP II es el **Catálogo de elementos de protección personal (EPP) para el Centro de Investigación Obonuco (Pasto)** (referencia 135116). \n\nSin embargo, **el presupuesto es $0**, lo que indica que el precio base no está especificado en los datos abiertos. El proceso se encuentra en estado \"Publicado\" y aún no ha recibido respuestas (0 ofertas) ni ha sido adjudicado.\n\nFuentes: SECOP II, datos abiertos (referencia 135116).",
+   "herramientas": [
+    "buscar_procesos"
+   ],
+   "tokens_entrada": 6880,
+   "tokens_salida": 245,
+   "costo_usd": 0.008105,
+   "latencia_s": 3.19,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R16",
+   "tipo": "taller1",
+   "pregunta": "¿Nuestro capital de trabajo alcanza el 40 % del presupuesto del proceso FLO-INFRA-SA-MC-007-2025?",
+   "respuesta": "Sí, nuestro capital de trabajo **sí alcanza el 40 % del presupuesto**. \n\nEl presupuesto del proceso FLO-INFRA-SA-MC-007-2025 es **$305.813.941** (SECOP II, datos abiertos). Nuestro capital de trabajo representa el **59,5 % del presupuesto**, lo que supera ampliamente el 40 % que usted pregunta.\n\nFuentes: SECOP II, datos abiertos (referencia FLO-INFRA-SA-MC-007-2025); Cálculo con los estados financieros de la empresa (corte 2025-12-31).",
+   "herramientas": [
+    "buscar_procesos",
+    "calcular_indicadores",
+    "calcular_indicadores"
+   ],
+   "tokens_entrada": 11322,
+   "tokens_salida": 394,
+   "costo_usd": 0.013292,
+   "latencia_s": 4.97,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R17",
+   "tipo": "sin_herramientas",
+   "pregunta": "¿Qué es el SECOP II?",
+   "respuesta": "El SECOP II es el Sistema Electrónico para la Contratación Pública de Colombia. Es la plataforma oficial del Estado donde se publican, administran y ejecutan todos los procesos de contratación de las entidades públicas del país.\n\nA través del SECOP II, las entidades públicas:\n- Publican las oportunidades de contratación (licitaciones, contrataciones directas, etc.)\n- Reciben y evalúan ofertas de proveedores\n- Adjudican contratos\n- Registran la ejecución y cierre de los contratos\n\nPara los proveedores como nuestra empresa, el SECOP II es la fuente principal para:\n- Identificar oportunidades de negocio\n- Acceder a la información de los procesos (presupuestos, plazos, requisitos)\n- Presentar ofertas\n- Consultar el estado de sus participaciones\n\nLos datos abiertos del SECOP II incluyen información pública sobre procesos: referencia, entidad contratante, presupuesto, modalidad de selección, estado, número de ofertas recibidas y adjudicación.\n\nFuentes: Conocimiento general (no proviene de los documentos)",
+   "herramientas": [],
+   "tokens_entrada": 3155,
+   "tokens_salida": 293,
+   "costo_usd": 0.00462,
+   "latencia_s": 3.53,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  },
+  {
+   "id": "R18",
+   "tipo": "sin_herramientas",
+   "pregunta": "¿Qué diferencia hay entre una licitación pública y una contratación directa?",
+   "respuesta": "La **licitación pública** y la **contratación directa** son dos modalidades de contratación pública que difieren fundamentalmente en su proceso y alcance:\n\n**Licitación pública:**\n- Es un proceso abierto y competitivo donde la entidad convoca públicamente a múltiples proveedores para que presenten ofertas.\n- Cualquier proveedor interesado puede participar (cumpliendo los requisitos habilitantes del pliego).\n- La entidad evalúa todas las propuestas según criterios predeterminados y adjudica al mejor oferente.\n- Es la modalidad más usada porque busca obtener la mejor relación calidad-precio y garantiza transparencia.\n- Requiere más tiempo y trámites administrativos.\n\n**Contratación directa:**\n- Es un proceso donde la entidad selecciona directamente al proveedor sin abrir convocatoria pública.\n- Solo se invita a uno o pocos proveedores específicos.\n- No hay competencia abierta ni evaluación comparativa de ofertas.\n- Se usa en casos excepcionales: contrataciones de emergencia, servicios únicos o especializados, o cuando hay falla del mercado.\n- Es más rápida pero exige justificación clara de por qué no se usa licitación.\n\nEn el SECOP II, ambas modalidades están registradas públicamente. La elección entre una u otra depende de la naturaleza del bien o servicio, el presupuesto y las circunstancias que enfrente la entidad.\n\nFuentes: Conocimiento general (no proviene de los documentos).",
+   "herramientas": [],
+   "tokens_entrada": 3166,
+   "tokens_salida": 391,
+   "costo_usd": 0.005121,
+   "latencia_s": 4.48,
+   "uso_herramientas": 1,
+   "respuesta_correcta": 1,
+   "cita_fuente": 1,
+   "abstencion": 1
+  }
+ ]
+}

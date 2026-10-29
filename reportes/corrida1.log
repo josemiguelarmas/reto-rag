@@ -1,0 +1,52 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+ T01 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  5.14s  7637+195 tok
+ T02 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  5.25s  13644+428 tok
+ T03 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.96s  13323+292 tok
+ T04 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  5.12s  13469+421 tok
+ T05 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  5.35s  13729+449 tok
+ T06 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.85s  7613+205 tok
+ T07 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.56s  7393+299 tok
+ T08 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  4.72s  13605+316 tok
+ T09 rag              uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.81s  7708+207 tok
+ T10 combinada        uso_herram=1 respuesta_=1 cita_fuent=0 abstencion=1  4.45s  7845+345 tok
+ T11 combinada        uso_herram=1 respuesta_=0 cita_fuent=1 abstencion=1  4.38s  7891+361 tok
+ T12 combinada        uso_herram=1 respuesta_=0 cita_fuent=1 abstencion=1  9.66s  13976+792 tok
+ T13 no_lo_se         uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.9s  7405+214 tok
+ T14 no_lo_se         uso_herram=1 respuesta_=0 cita_fuent=1 abstencion=1  3.92s  7541+295 tok
+ T15 no_lo_se         uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.01s  6513+229 tok
+ T16 no_lo_se         uso_herram=1 respuesta_=1 cita_fuent=0 abstencion=0  3.46s  7663+275 tok
+ T17 no_lo_se         uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  5.29s  12046+418 tok
+ T18 no_lo_se         uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  1.53s  3161+88 tok
+ R01 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.38s  6489+160 tok
+ R02 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.57s  6470+174 tok
+ R03 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.24s  6474+145 tok
+ R04 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  1.8s  6462+103 tok
+ R05 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.23s  7034+198 tok
+ R06 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  60.23s  7083+195 tok
+ R07 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.59s  10277+154 tok
+ R08 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.76s  14929+260 tok
+ R09 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  4.8s  7370+448 tok
+ R10 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.72s  7722+278 tok
+ R11 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.73s  7390+296 tok
+ R12 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.45s  6930+282 tok
+ R13 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.71s  6957+193 tok
+ R14 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  2.79s  6928+204 tok
+ R15 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.19s  6880+245 tok
+ R16 taller1          uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  4.97s  11322+394 tok
+ R17 sin_herramientas uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  3.53s  3155+293 tok
+ R18 sin_herramientas uso_herram=1 respuesta_=1 cita_fuent=1 abstencion=1  4.48s  3166+391 tok
+
+Resumen: {
+ "uso_herramientas": 1.0,
+ "respuesta_correcta": 0.917,
+ "cita_fuente": 0.944,
+ "abstencion": 0.972,
+ "casos": 36,
+ "costo_total_usd": 0.3564,
+ "costo_por_pregunta_usd": 0.0099,
+ "tokens_promedio": 8762,
+ "latencia_promedio_s": 5.38,
+ "abstencion_en_casos_no_lo_se": 0.833
+}
+Detalle en reportes/A-haiku-4-5-corrida1.json

@@ -1,0 +1,17 @@
+# Taller 1 (base del curso)
+langchain>=1.0
+langchain-anthropic
+langsmith
+python-dotenv
+requests
+# Taller 2: MCP
+mcp[cli]>=1.9,<2
+langchain-mcp-adapters>=0.1
+# Taller 2: RAG y memoria (tutorial Memoria RAG)
+chromadb>=1.0
+onnxruntime
+tokenizers
+huggingface-hub
+pypdf>=5.0
+# Pruebas
+pytest

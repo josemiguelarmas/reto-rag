@@ -1,0 +1,15 @@
+# Entorno virtual
+.venv/
+# Credenciales: nunca subir .env
+.env
+.env.*
+!.env.example
+# Índice vectorial y memoria persistente (se regeneran)
+almacen/
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+# Sistema
+.DS_Store
+Thumbs.db
